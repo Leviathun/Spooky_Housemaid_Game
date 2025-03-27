@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spooky Housemaid</title>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+    <style>body { margin: 0; }</style>
+</head>
+<body>
+    <div id="game-container"></div>
+    <!-- โหลดไฟล์ Scene และ Entity ก่อน -->
+    <script src="src/scenes/BootScene.js"></script>
+    <script src="src/scenes/PreloaderScene.js"></script>
+    <script src="src/scenes/MainGameScene.js"></script>
+    <script src="src/entities/Furniture.js"></script>
+    <!-- โหลด game.js สุดท้าย -->
+    <script src="game.js"></script>
+</body>
+</html>
+<style>
+    body { 
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* ปิด Scroll Bar */
+        width: 100vw;
+        height: 100vh;
+    }
+    #game-container {
+        width: 100%;
+        height: 100%;
+    }
+    canvas {
+        display: block;
+    }
+</style>
